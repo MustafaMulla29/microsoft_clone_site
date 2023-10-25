@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Microsoft – Cloud, Computers, Apps &amp; Gaming</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* .slider {
+        width: 100%;
+        height: 500px;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .slide {
+        width: 100%;
+        height: 100%;
+        transition: all 1s ease;
+        position: absolute;
+    } */
+    ::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: aliceblue;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        /* background: rebeccapurple; */
+        /* background: #321d76; */
+        background: #2646b7;
+        /* width: 20px; */
+        border: 5px solid transparent;
+        border-radius: 10px;
+        background-clip: border-box;
+    }
+
+    /* button {
+        background: rgb(63, 94, 251);
+        background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    } */
+</style>
+
+<body class="overflow-x-hidden">
+    <div class="bg-white">
+        <div class="navbar lg:w-[90%] flex justify-around items-center p-3 lg:h-[55px] top-0 sticky z-50 bg-white">
+            <div class="flex justify-center items-center lg:justify-start  lg:order-2 lg:hidden">
+                <div id="hamburger" class=" cursor-pointer inline-block p-1 lg:hidden">
+                    <div class="line h-0.5 w-6 my-1 bg-black "></div>
+                    <div class="line h-0.5 w-6 my-1 bg-black "></div>
+                    <div class="line h-0.5 w-6 my-1 bg-black "></div>
+                </div>
+                <div id="close"
+                    class="lex justify-center items-center lg:justify-start  lg::order-2 cursor-pointer hidden lg:hidden">
+                    close</div>
+                <div class="search lg:hidden w-4 ml-6 mr-2"><img src="img/search.svg" alt=""></div>
+            </div>
+            <div class="logo  text-center lg:order-1  flex w-[52%] lg:w-[60%] items-center justify-center  text-sm">
+                <div><img class=" w-[80%] lg:w-28 flex justify-center " src="img/logo.png" alt=""></div>
+                <div
+                    class="features absolute w-fit lg:static lg:w-auto lg:bg-white bg-gray-200 inset-0 lg:flex lg:items-center lg:mx-4 lg:space-x-6 -translate-x-96 lg:translate-x-0">
+                    <div class="items cursor-pointer hover:underline hover:underline-offset-8">Microsoft 365</div>
+                    <div class="items cursor-pointer hover:underline hover:underline-offset-8">Teams</div>
+                    <div class="items cursor-pointer hover:underline hover:underline-offset-8">Windows</div>
+                    <div class="items cursor-pointer hover:underline hover:underline-offset-8">Surface</div>
+                    <div class="items cursor-pointer hover:underline hover:underline-offset-8"> Xbox</div>
+                    <div class="items cursor-pointer hover:underline hover:underline-offset-8"> Support</div>
+                </div>
+            </div>
+            <div class="cart text-center lg:order-3 flex items-center justify-center text-sm">
+                <div class="search hidden lg:block mx-4 cursor-pointer hover:underline hover:underline-offset-8">All
+                    microsoft </div>
+                <span class="hidden lg:block mx-2">Search</span>
+                <img class="w-4 h-4 mr-4 hidden lg:block cursor-pointer" src="img/search.svg" alt="">
+                <div class=" flex items-center justify-center">
+                    <span class="hidden lg:block mx-2">Cart</span>
+                    <img class="w-4 h-4 mx-2 cursor-pointer" src="img/cart.svg" alt="">
+                    <span class="hidden lg:block mx-2">Sign In</span>
+                    <img class="w-6 h-6 mx-2 lg:w-4 lg:h-4 cursor-pointer" src="img/account.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="navigation" class=" hidden">
+        <div class="features absolute text-black z-20 space-y-5 bg-[#f2f2f2] w-[100%]  h-[307px] space-x-4">
+            <div class="items cursor-pointer hover:underline hover:underline-offset-8 mx-4 mt-5 ">Microsoft 365</div>
+            <div class="items cursor-pointer hover:underline hover:underline-offset-8 ">Teams</div>
+            <div class="items cursor-pointer hover:underline hover:underline-offset-8 ">Windows</div>
+            <div class="items cursor-pointer hover:underline hover:underline-offset-8 ">Surface</div>
+            <div class="items cursor-pointer hover:underline hover:underline-offset-8 "> Xbox</div>
+            <div class="items cursor-pointer hover:underline hover:underline-offset-8 "> Support</div>
+        </div>
+    </div>
+
+    <div class="slider w-[100%] h-[500px] m-auto relative overflow-hidden     ">
+        <div
+            class="slide h-[100%] absolute w-[100%] flex flex-col-reverse   bg-cover bg-center  border border-b-[1px] shadow-md transition-transform duration-1000 ease-in-out lg:h-[490px]">
+            <div
+                class="left md:absolute md:top-[46%]  lg:top-[35%] z-10  flex flex-col justify-center items-start md:items-baseline space-y-4 my-3 mx-5 md:mx-28 md:w-[50%] md:space-y-6">
+                <h1 class="text-2xl md:text-4xl font-medium tracking-in-expand">Microsoft 365</h1>
+                <p class="w-fit md:w-3/4 text-left md:text-left ">Everything you need to achieve in less time</p>
+                <div
+                    class="flex items-start justify-center flex-col space-y-4 md:flex-row md:space-y-0  md:items-center">
+                    <button class="text-white bg-[#0067b7]  px-4 py-2 rounded-sm font-medium md:mr-8 ">For one
+                        person</button>
+                    <p
+                        class=" flex text-[#0067b7] md:text-black hover:underline hover:mr-2 transition-all duration-300 font-medium cursor-pointer">
+                        For upto six
+                        people </p>
+                    <img class="rotate-180 relative top-[-33%] left-[101%] md:block md:top-0 md:left-0"
+                        src="img/chevron-left.svg"></img>
+
+                </div>
+            </div>
+            <div class="right md:relative md:h-[100%]">
+                <img class="hidden md:block w-[100%] md:h-[100%]" src="img/hero1.avif" alt="">
+                <img class="md:hidden w-[100%] h-[20rem]"
+                    src="img/Highlight-M365-Icon-Bounce-Word-Merch_VP1-539x440.avif" alt="">
+            </div>
+        </div>
+
+        <div
+            class="slide  absolute top-0 flex text-black w-[100%] h-[100%] flex-col-reverse bg-cover bg-center  border border-b-[1px] shadow-md transition-transform duration-1000 ease-in-out lg:h-[490px]">
+            <div
+                class="lef md:absolute md:top-[46%] lg:top-[35%] z-10 flex flex-col justify-center items-start md:items-baseline space-y-4 my-3 mx-5 md:mx-28 md:w-[50%] md:space-y-6">
+                <h1 class="text-2xl md:text-4xl md:text-white font-medium">PC Game Pass</h1>
+                <p class="w-fit md:w-3/4 text-left md:text-left md:text-white ">Unlock 100+ great games and EA Play,
+                    plus
+                    get your
+                    first month for
+                    ₹50. Offer available to new subscribers only.</p>
+                <div class="flex items-center justify-center flex-col space-y-4 md:flex-row md:space-y-0 ">
+                    <button class="text-white bg-[#0067b7]  px-4 py-2 rounded-sm font-medium md:mr-8">Join now</button>
+
+                </div>
+            </div>
+            <div class="right md:relative md:h-[100%]">
+                <img class="hidden md:block w-[100%] md:h-[100%]" src="img/hero2.jpeg" alt="">
+                <img class="md:hidden w-[100%] h-[20rem]" src="img/games-res.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="text-center space-x-3">
+        <button class="" onclick="goPrev()"><img src="/img/chevron-left.svg" alt=""></button>
+        <span class="circle w-[10px] h-[10px] border border-black rounded-2xl "></span>
+        <span class="circle w-[10px] h-[10px] border border-black rounded-2xl "></span>
+        <button class=" rotate-180" onclick="goNext()"><img src="/img/chevron-left.svg" alt=""></button>
+    </div> -->
+    <div id="sliderBtn" class=" flex items-center justify-center space-x-6 my-4">
+        <div id="previousBtn" onclick="goPrev()" class="previous cursor-pointer"><img
+                class="hover:-translate-x-2 transition-all duration-300" src="img/chevron-left.svg" alt=""></div>
+        <div id="circlePrev"
+            class=" w-[10px] h-[10px] border border-black rounded-2xl transition-all duration-300 ease-in">
+        </div>
+        <div id="circleNext"
+            class=" w-[10px] h-[10px] border border-black rounded-2xl transition-all duration-300 ease-in">
+        </div>
+        <div id="nextBtn" onclick="goNext()" class="next cursor-pointer "><img
+                class="rotate-180 hover:translate-x-2 transition-all duration-300 " src="img/chevron-left.svg" alt="">
+        </div>
+    </div>
+
+    <div
+        class="promo flex items-center justify-center flex-col flex-wrap my-5 space-y-6 md:space-x-9 font-medium md:flex-row ">
+        <div class="item flex items-center justify-center  flex-col md:mt-[24px]">
+            <img class="m-auto " src="img/icon1.webp" alt="">
+            <span class="cursor-pointer underline text-[#0067b7]">Choose your Microsoft 365</span>
+        </div>
+        <div class="item flex items-center justify-center flex-col">
+            <img class="m-auto " src="img/icon2.webp" alt="">
+            <span class="cursor-pointer underline text-[#0067b7]">Explore Surface devices</span>
+        </div>
+        <div class="item flex items-center justify-center flex-col">
+            <img class="m-auto " src="img/icon3.webp" alt="">
+            <span class="cursor-pointer underline text-[#0067b7]">Buy Xbox games</span>
+        </div>
+        <div class="item flex items-center justify-center flex-col">
+            <img class="m-auto " src="img/icon4.webp" alt="">
+            <span class="cursor-pointer underline text-[#0067b7]">Get Windows 11</span>
+        </div>
+    </div>
+
+    <div
+        class="products space-y-12 lg:my-9 flex flex-col flex-wrap sm:flex-nowrap  lg:flex-row  lg:m-auto lg:space-y-3">
+        <div class="flex flex-col sm:flex-row space-y-12 sm:space-y-3  lg:justify-end lg:w-[50%]">
+            <div class=" mx-3 mt-3  cursor-pointer sm:w-[50%]   lg:w-[40%] ">
+                <div class="space-y-3">
+                    <div class="img ">
+                        <img class="w-[100%]" src="img/Surface-Pro-9.jpeg" alt="">
+                    </div>
+                    <div class="badge bg-[#ffb900] text-black w-fit px-2 py-[1px] font-medium">
+                        New
+                    </div>
+                    <div class="body space-y-3">
+                        <span class="font-medium text-xl md:text-2xl">Surface Pro 9</span>
+                        <p>The tablet flexibility you want and the laptop performance you need — all in one
+                            ultra-portable
+                            device.
+                        </p>
+                    </div>
+                    <div class="more text-[#0067bd] font-medium flex">
+                        <Span class="hover:mr-2 hover:underline transition-all duration-300">Learn more</Span>
+                        <img src="img/chevron-left.svg" class="rotate-180  text-[#0067bd]" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class=" mx-3 sm:mt-3  cursor-pointer sm:w-[50%]  lg:w-[40%]">
+                <div class="space-y-3">
+                    <div class="img ">
+                        <img class="w-[100%]" src="img/Surface-Laptop-5-.webp" alt="">
+                    </div>
+                    <div class="badge bg-[#ffb900] text-black w-fit px-2 py-[1px] font-medium">
+                        New
+                    </div>
+                    <div class="body space-y-3">
+                        <span class="font-medium text-xl md:text-2xl">Surface Laptop 5</span>
+                        <p>Sophisticated style and multitasking speed powered by 12th Gen Intel® Core, with Windows
+                            11.
+                        </p>
+                    </div>
+                    <div class="more text-[#0067bd] font-medium flex">
+                        <Span class="hover:mr-2 hover:underline transition-all duration-300">Learn more</Span>
+                        <img src="img/chevron-left.svg" class="rotate-180 text-[#0067bd]" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col sm:flex-row space-y-12 sm:space-y-0 lg:space-y-0 lg:justify-start lg:w-[50%]">
+            <div class=" mx-3  cursor-pointer sm:w-[50%] lg:w-[40%]">
+                <div class="space-y-3">
+                    <div class="img ">
+                        <img class="w-[100%]" src="img/Surface-Laptop-Studio-01.webp" alt="">
+                    </div>
+
+                    <div class="body space-y-3 ">
+                        <span class="font-medium text-xl md:text-2xl">Surface Laptop Studio</span>
+                        <p>Flex your creative muscle on the most powerful Surface Laptop. Now available with Windows
+                            11.
+                        </p>
+                    </div>
+                    <div class="more text-[#0067bd] font-medium flex">
+                        <Span class="hover:mr-2 hover:underline transition-all duration-300">Learn more</Span>
+                        <img src="img/chevron-left.svg" class="rotate-180 text-[#0067bd]" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class=" mx-3  cursor-pointer sm:w-[50%] lg:w-[40%]">
+                <div class="space-y-3">
+                    <div class="img ">
+                        <img class="w-[110%] " src="img/Xbox-Series-X.webp" alt="">
+                    </div>
+
+                    <div class="body  space-y-3 ">
+                        <span class="font-medium text-xl md:text-2xl">Xbox Series X</span>
+                        <p>The fastest, more powerful Xbox ever.
+                        </p>
+                    </div>
+                    <div class="more text-[#0067bd] font-medium flex">
+                        <Span class="hover:mr-2 hover:underline transition-all duration-300">Learn more</Span>
+                        <img src="img/chevron-left.svg" class="rotate-180 text-[#0067bd]" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-xbox mt-4 container p-4 flex flex-col-reverse  m-auto  lg:relative lg:w-[88%] mb-12">
+        <div class=" left space-y-3 lg:space-y-6 md:-translate-y-20 lg:-translate-y-0 lg:w-[100%] lg:self-start lg:bg-transparent lg:rounded-none md:w-[88%] md:self-center md:bg-white md:py-4 md:px-5 md:rounded-xl
+        md:shadow-md lg:shadow-none lg:absolute lg:top-[38%] lg:ml-20">
+            <h3 class="text-2xl font-medium lg:text-4xl ">Xbox Series S</h3>
+            <p class="">Next-gen performance in the smallest Xbox ever</p>
+            <button class="bg-[#0067b7] px-3 py-2 text-white rounded-sm font-medium">Shop now</button>
+        </div>
+        <div class="right mb-8">
+            <img src="img/Hero-Xbox.webp" class="hidden lg:block" alt="">
+            <img class="w-[100%] lg:hidden" src="img/Hero-resp.jpg" alt="">
+        </div>
+    </div>
+
+    <h1 class="font-medium text-2xl lg:text-[35px] w-[85%] m-auto">For business</h1>
+    <div class="products flex flex-col flex-wrap sm:flex-nowrap  lg:flex-row  lg:m-auto lg:space-y-3">
+        <div class="flex flex-col sm:flex-row space-y-12 sm:space-y-3  lg:justify-end lg:w-[50%]">
+            <div class=" mx-3 mt-3  cursor-pointer sm:w-[50%]   lg:w-[40%] ">
+                <div class="space-y-3">
+                    <div class="img ">
+                        <img class="w-[100%]" src="img/Surface-business.webp" alt="">
+                    </div>
+                    <div class="badge bg-[#ffb900] text-black w-fit px-2 py-[1px] font-medium">
+                        New
+                    </div>
+                    <div class="body space-y-3">
+                        <span class="font-medium text-xl md:text-2xl">Surface for Business Family</span>
+                        <p>Surface for Business devices enable work on your team's terms with flexibility, built-in
+                            security and the power they need to succeed.
+                        </p>
+                    </div>
+                    <div class="more text-[#0067bd] font-medium flex">
+                        <Span class="hover:mr-2 hover:underline transition-all duration-300">Learn more</Span>
+                        <img src="img/chevron-left.svg" class="rotate-180  text-[#0067bd]" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class=" mx-3 sm:mt-3  cursor-pointer sm:w-[50%]  lg:w-[40%]">
+                <div class="space-y-3">
+                    <div class="img ">
+                        <img class="w-[100%]" src="img/Microsoft-Teams.webp" alt="">
+                    </div>
+                    <div class="badge bg-[#ffb900] text-black w-fit px-2 py-[1px] font-medium">
+                        New
+                    </div>
+                    <div class="body space-y-3">
+                        <span class="font-medium text-xl md:text-2xl">Get Microsoft Teams for free</span>
+                        <p>Online meetings, chat and shared cloud storage – all in one place.
+                        </p>
+                    </div>
+                    <div class="more text-[#0067bd] font-medium flex">
+                        <Span class="hover:mr-2 hover:underline transition-all duration-300">Sign up for free</Span>
+                        <img src="img/chevron-left.svg" class="rotate-180 text-[#0067bd]" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col sm:flex-row space-y-12 sm:space-y-0 lg:space-y-0 lg:justify-start lg:w-[50%]">
+            <div class=" mx-3  cursor-pointer sm:w-[50%] lg:w-[40%]">
+                <div class="space-y-3">
+                    <div class="img ">
+                        <img class="w-[100%]" src="img/Microsoft-365.webp" alt="">
+                    </div>
+
+                    <div class="body space-y-3 ">
+                        <span class="font-medium text-xl md:text-2xl">Try Microsoft 365 for free</span>
+                        <p>Get Microsoft Teams, secure cloud storage and premium apps across devices with a free
+                            one-month Microsoft 365 Business Standard trial.
+                        </p>
+                    </div>
+                    <div class="more text-[#0067bd] font-medium flex">
+                        <Span class="hover:mr-2 hover:underline transition-all duration-300">Start your free
+                            trial</Span>
+                        <img src="img/chevron-left.svg" class="rotate-180 text-[#0067bd]" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class=" mx-3  cursor-pointer sm:w-[50%] lg:w-[40%]">
+                <div class="space-y-3">
+                    <div class="img ">
+                        <img class="w-[110%] " src="img/Xbox-Series-X.webp" alt="">
+                    </div>
+
+                    <div class="body  space-y-3 ">
+                        <span class="font-medium text-xl md:text-2xl">Windows 11 for business</span>
+                        <p>Designed for hybrid work. Powerful for employees. Consistent for IT. Secure for all.
+                        </p>
+                    </div>
+                    <div class="more text-[#0067bd] font-medium flex">
+                        <Span class="hover:mr-2 hover:underline transition-all duration-300">Learn more</Span>
+                        <img src="img/chevron-left.svg" class="rotate-180 text-[#0067bd]" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div
+        class="trans flex items-center justify-center space-x-60 my-28 w-[100%] h-[100%] translate-x-[100%]  animate-scrolling">
+        <img src="img/icon1.webp" alt="">
+        <img src="img/icon2.webp" alt="">
+        <img src="img/icon3.webp" alt="">
+        <img src="img/icon4.webp" alt="">
+    </div> -->
+
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
